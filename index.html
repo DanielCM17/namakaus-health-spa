@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namakau's Health Spa | Relax. Rejuvenate. Recenter.</title>
+  <meta name="description" content="Namakau's Health Spa in Livingstone, Zambia — massage therapy, facials, body treatments, aromatherapy and wellness experiences." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#063b2f',
+            sage: '#e8efe8',
+            cream: '#f8f7f1',
+            gold: '#c7a45a'
+          },
+          fontFamily: {
+            display: ['Georgia', 'serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 18px 50px rgba(6,59,47,.10)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background:#f8f7f1; color:#17362f; }
+    .hero-bg { background-image: linear-gradient(90deg, rgba(3,35,27,.88) 0%, rgba(3,35,27,.62) 42%, rgba(3,35,27,.12) 75%), url('./assets/hero.jpg'); background-position:center; background-size:cover; }
+    .cta-bg { background-image: linear-gradient(90deg, rgba(3,35,27,.88), rgba(3,35,27,.35)), url('./assets/cta.jpg'); background-position:center; background-size:cover; }
+    .glass { background:rgba(255,255,255,.08); backdrop-filter:blur(12px); }
+    .fade-up { animation: fadeUp .7s ease-out both; }
+    @keyframes fadeUp { from {opacity:0; transform:translateY(14px)} to {opacity:1; transform:none} }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- NAVIGATION -->
+  <header class="absolute inset-x-0 top-0 z-50 text-white">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 lg:px-8">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="grid h-10 w-10 place-items-center rounded-full border border-white/30 text-2xl">✧</span>
+        <span class="leading-none"><strong class="font-display text-lg">Namakau's</strong><small class="block text-[9px] tracking-[.3em] text-white/75">HEALTH SPA</small></span>
+      </a>
+      <button id="menuBtn" class="rounded-full border border-white/30 px-4 py-2 text-sm md:hidden" aria-label="Open menu">Menu</button>
+      <div id="navLinks" class="hidden items-center gap-7 text-sm md:flex">
+        <a class="hover:text-white/70" href="#home">Home</a>
+        <a class="hover:text-white/70" href="#services">Services</a>
+        <a class="hover:text-white/70" href="#pricing">Pricing</a>
+        <a class="hover:text-white/70" href="#about">About</a>
+        <a class="hover:text-white/70" href="#testimonials">Testimonials</a>
+        <a class="hover:text-white/70" href="#contact">Contact</a>
+        <a href="#contact" class="rounded-full border border-white/50 bg-forest/80 px-5 py-2.5 font-semibold">Book Now</a>
+      </div>
+    </nav>
+    <div id="mobileNav" class="mx-4 hidden rounded-2xl border border-white/20 bg-black/50 p-4 backdrop-blur-xl md:hidden">
+      <div class="grid gap-3 text-center text-sm">
+        <a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero-bg flex min-h-[720px] items-center text-white">
+      <div class="mx-auto w-full max-w-6xl px-5 pt-28 lg:px-8">
+        <div class="max-w-2xl fade-up">
+          <p class="mb-4 text-xs font-bold uppercase tracking-[.28em] text-emerald-100">Namakau's Health Spa • Livingstone</p>
+          <h1 class="font-display text-5xl leading-[.98] sm:text-6xl lg:text-7xl">Relax. Rejuvenate.<br><span class="text-emerald-200">Recenter.</span></h1>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-white/85">Step away from the rush and return to yourself. Experience thoughtful treatments, natural wellness and expert care in a peaceful space.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#contact" class="rounded-full bg-white px-7 py-3.5 text-center font-bold text-forest transition hover:-translate-y-0.5">Book an Appointment <span class="ml-2">→</span></a>
+            <a href="#services" class="rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-center font-semibold backdrop-blur hover:bg-white/15">Explore Treatments</a>
+          </div>
+          <div class="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/75"><span>✦ Natural treatments</span><span>♡ Expert therapists</span><span>⌖ Livingstone, Zambia</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="border-b border-black/5 bg-white">
+      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-5 px-5 py-8 md:grid-cols-4 lg:px-8">
+        <div><div class="text-2xl">♧</div><h3 class="mt-2 font-semibold">Holistic Wellness</h3><p class="text-sm text-slate-500">Mind, body and soul.</p></div>
+        <div><div class="text-2xl">⌁</div><h3 class="mt-2 font-semibold">Natural Products</h3><p class="text-sm text-slate-500">Pure. Safe. Effective.</p></div>
+        <div><div class="text-2xl">♙</div><h3 class="mt-2 font-semibold">Expert Therapists</h3><p class="text-sm text-slate-500">Professional & caring.</p></div>
+        <div><div class="text-2xl">☆</div><h3 class="mt-2 font-semibold">A Tranquil Space</h3><p class="text-sm text-slate-500">Relax in nature's calm.</p></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-cream py-20 lg:py-28">
+      <div class="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[.75fr_1.25fr] lg:items-center lg:px-8">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[.25em] text-emerald-700">Our services</p>
+          <h2 class="mt-3 font-display text-4xl leading-tight text-forest sm:text-5xl">Feel your best,<br>inside and out.</h2>
+          <p class="mt-5 max-w-md leading-7 text-slate-600">From restoring massages to skin-renewing rituals, every treatment is designed to help you slow down, feel cared for and leave renewed.</p>
+          <a href="#contact" class="mt-7 inline-flex rounded-full bg-forest px-6 py-3 font-semibold text-white hover:opacity-90">Book a treatment →</a>
+        </div>
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <article class="overflow-hidden rounded-2xl bg-white shadow-soft"><img src="./assets/massage.jpg" class="h-32 w-full object-cover" alt="Massage therapy"><div class="p-4"><h3 class="font-semibold">Massage Therapy</h3><p class="mt-1 text-sm text-slate-500">Release tension and restore balance.</p></div></article>
+          <article class="overflow-hidden rounded-2xl bg-white shadow-soft"><img src="./assets/facial.jpg" class="h-32 w-full object-cover" alt="Facial treatment"><div class="p-4"><h3 class="font-semibold">Facial Treatments</h3><p class="mt-1 text-sm text-slate-500">Refresh your skin and reveal your glow.</p></div></article>
+          <article class="overflow-hidden rounded-2xl bg-white shadow-soft"><img src="./assets/scrub.jpg" class="h-32 w-full object-cover" alt="Body scrub and wrap"><div class="p-4"><h3 class="font-semibold">Body Scrubs & Wraps</h3><p class="mt-1 text-sm text-slate-500">Detox, nourish and renew your skin.</p></div></article>
+          <article class="overflow-hidden rounded-2xl bg-white shadow-soft"><img src="./assets/aroma.jpg" class="h-32 w-full object-cover" alt="Aromatherapy"><div class="p-4"><h3 class="font-semibold">Aromatherapy</h3><p class="mt-1 text-sm text-slate-500">Calm your mind and uplift your spirit.</p></div></article>
+          <article class="overflow-hidden rounded-2xl bg-white shadow-soft"><img src="./assets/sauna.jpg" class="h-32 w-full object-cover" alt="Sauna and steam"><div class="p-4"><h3 class="font-semibold">Sauna & Steam</h3><p class="mt-1 text-sm text-slate-500">Purify your body and reset.</p></div></article>
+          <article class="overflow-hidden rounded-2xl bg-white shadow-soft"><img src="./assets/wellness.jpg" class="h-32 w-full object-cover" alt="Wellness package"><div class="p-4"><h3 class="font-semibold">Wellness Packages</h3><p class="mt-1 text-sm text-slate-500">A complete experience, thoughtfully curated.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-white">
+      <div class="mx-auto grid max-w-6xl lg:grid-cols-2">
+        <div class="min-h-[360px] bg-cover bg-center" style="background-image:url('./assets/about.jpg')"></div>
+        <div class="flex items-center bg-sage px-6 py-16 sm:px-12 lg:px-16">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[.25em] text-emerald-700">About Namakau's</p>
+            <h2 class="mt-3 font-display text-4xl leading-tight text-forest">More than a spa —<br>it's a sanctuary.</h2>
+            <p class="mt-5 leading-7 text-slate-600">Namakau's Health Spa is built around a simple belief: true wellness begins when you make time for yourself. Come in tired, leave feeling lighter, restored and ready for what comes next.</p>
+            <div class="mt-7 grid grid-cols-3 gap-4 text-sm"><div><strong class="block text-forest">Expert</strong><span class="text-slate-500">Therapists</span></div><div><strong class="block text-forest">Natural</strong><span class="text-slate-500">Products</span></div><div><strong class="block text-forest">Serene</strong><span class="text-slate-500">Location</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="bg-cream py-20 lg:py-24">
+      <div class="mx-auto max-w-6xl px-5 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center"><p class="text-xs font-bold uppercase tracking-[.25em] text-emerald-700">Pricing</p><h2 class="mt-3 font-display text-4xl text-forest sm:text-5xl">Quality care, great value.</h2><p class="mt-3 text-slate-500">Simple packages for a quick reset or a full wellness escape.</p></div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-black/10 bg-white p-6"><h3 class="font-semibold">Basic</h3><p class="text-sm text-slate-500">Perfect for a quick refresh</p><div class="my-5 font-display text-4xl text-forest">K250<small class="font-sans text-sm text-slate-500"> / session</small></div><ul class="space-y-2 text-sm text-slate-600"><li>• 60 min massage</li><li>• Herbal foot soak</li></ul><a href="#contact" class="mt-7 block rounded-xl bg-forest py-3 text-center text-sm font-bold text-white">Book now</a></div>
+          <div class="relative rounded-2xl border-2 border-emerald-800 bg-white p-6 shadow-soft"><span class="absolute -top-3 right-5 rounded-full bg-forest px-3 py-1 text-xs font-bold text-white">Most popular</span><h3 class="font-semibold">Standard</h3><p class="text-sm text-slate-500">Our most popular choice</p><div class="my-5 font-display text-4xl text-forest">K450<small class="font-sans text-sm text-slate-500"> / session</small></div><ul class="space-y-2 text-sm text-slate-600"><li>• 60 min massage</li><li>• Facial treatment</li><li>• Aromatherapy</li></ul><a href="#contact" class="mt-7 block rounded-xl bg-forest py-3 text-center text-sm font-bold text-white">Book now</a></div>
+          <div class="rounded-2xl border border-black/10 bg-white p-6"><h3 class="font-semibold">Premium</h3><p class="text-sm text-slate-500">The full experience</p><div class="my-5 font-display text-4xl text-forest">K750<small class="font-sans text-sm text-slate-500"> / session</small></div><ul class="space-y-2 text-sm text-slate-600"><li>• Massage</li><li>• Facial treatment</li><li>• Body scrub</li><li>• Sauna / steam</li></ul><a href="#contact" class="mt-7 block rounded-xl bg-forest py-3 text-center text-sm font-bold text-white">Book now</a></div>
+          <div class="rounded-2xl border border-black/10 bg-white p-6"><h3 class="font-semibold">Wellness Package</h3><p class="text-sm text-slate-500">Relax • Rejuvenate • Restore</p><div class="my-5 font-display text-4xl text-forest">K1,200<small class="font-sans text-sm text-slate-500"> / session</small></div><ul class="space-y-2 text-sm text-slate-600"><li>• All premium services</li><li>• Complimentary herbal tea</li><li>• 10% off future visits</li></ul><a href="#contact" class="mt-7 block rounded-xl bg-forest py-3 text-center text-sm font-bold text-white">Book now</a></div>
+        </div>
+        <p class="mt-5 text-center text-xs text-slate-400">Demo pricing — replace with Namakau's actual packages before launch.</p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="relative overflow-hidden bg-forest py-20 text-white">
+      <div class="absolute inset-0 opacity-20" style="background-image:url('./assets/cta.jpg');background-size:cover;background-position:center"></div>
+      <div class="relative mx-auto max-w-6xl px-5 lg:px-8">
+        <div class="text-center"><p class="text-xs font-bold uppercase tracking-[.25em] text-emerald-200">Testimonials</p><h2 class="mt-3 font-display text-4xl">Leave feeling like yourself again.</h2></div>
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <figure class="rounded-2xl bg-white p-6 text-slate-700"><div class="text-gold">★★★★★</div><blockquote class="mt-4 leading-7">“A peaceful experience from the moment I walked in. The massage was exactly what I needed.”</blockquote><figcaption class="mt-5 text-sm font-semibold">— Sample client review</figcaption></figure>
+          <figure class="rounded-2xl bg-white p-6 text-slate-700"><div class="text-gold">★★★★★</div><blockquote class="mt-4 leading-7">“Beautiful atmosphere, professional service and such a relaxing experience. I left refreshed.”</blockquote><figcaption class="mt-5 text-sm font-semibold">— Sample client review</figcaption></figure>
+          <figure class="rounded-2xl bg-white p-6 text-slate-700"><div class="text-gold">★★★★★</div><blockquote class="mt-4 leading-7">“The perfect place to slow down and take care of yourself. I would definitely come back.”</blockquote><figcaption class="mt-5 text-sm font-semibold">— Sample client review</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-bg py-20 text-white">
+      <div class="mx-auto max-w-4xl px-5 text-center"><p class="text-xs font-bold uppercase tracking-[.25em] text-emerald-100">Ready to recharge?</p><h2 class="mt-3 font-display text-4xl sm:text-5xl">Your wellness journey starts here.</h2><p class="mx-auto mt-4 max-w-xl text-white/80">Give yourself permission to pause. Book your appointment and take the first step toward feeling better.</p><a href="#contact" class="mt-7 inline-block rounded-full bg-white px-7 py-3.5 font-bold text-forest">Book an Appointment →</a></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-white py-20 lg:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+        <div><p class="text-xs font-bold uppercase tracking-[.25em] text-emerald-700">Get in touch</p><h2 class="mt-3 font-display text-4xl text-forest">Let's make time for you.</h2><p class="mt-5 leading-7 text-slate-600">Ready to book? Send us a message and we'll help you choose the right treatment.</p><div class="mt-8 space-y-4 text-sm text-slate-600"><p>⌖ <strong class="text-slate-800">Location:</strong> Livingstone, Zambia</p><p>☎ <strong class="text-slate-800">Phone:</strong> +260 97X XXX XXX</p><p>✉ <strong class="text-slate-800">Email:</strong> hello@namakauspa.co.zm</p><p>◷ <strong class="text-slate-800">Hours:</strong> Mon–Sun, 8:00 AM–8:00 PM</p></div></div>
+        <form id="contactForm" class="rounded-3xl bg-cream p-6 sm:p-8 shadow-soft"><div class="grid gap-4 sm:grid-cols-2"><label class="text-sm font-semibold">Name<input required class="mt-2 w-full rounded-xl border border-black/10 bg-white px-4 py-3 font-normal outline-none focus:border-emerald-700" placeholder="Your name"></label><label class="text-sm font-semibold">Email<input type="email" required class="mt-2 w-full rounded-xl border border-black/10 bg-white px-4 py-3 font-normal outline-none focus:border-emerald-700" placeholder="you@example.com"></label></div><label class="mt-4 block text-sm font-semibold">How can we help?<textarea required rows="5" class="mt-2 w-full rounded-xl border border-black/10 bg-white px-4 py-3 font-normal outline-none focus:border-emerald-700" placeholder="I'd like to book a massage..."></textarea></label><button class="mt-4 w-full rounded-xl bg-forest py-3.5 font-bold text-white hover:opacity-90">Send Enquiry</button><p id="formMsg" class="mt-3 hidden text-center text-sm text-emerald-800">Thanks! This demo form is ready to connect to WhatsApp, email or a booking system.</p></form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#032d24] py-10 text-white">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-5 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left lg:px-8"><div><strong class="font-display text-xl">Namakau's</strong><small class="ml-2 text-[9px] tracking-[.3em] text-white/60">HEALTH SPA</small></div><div class="text-sm text-white/60">Relax • Rejuvenate • Recenter</div><div class="text-xs text-white/50">© 2026 Namakau's Health Spa. Demo website.</div></div>
+  </footer>
+
+  <script>
+    const menuBtn=document.getElementById('menuBtn'), mobileNav=document.getElementById('mobileNav');
+    menuBtn.addEventListener('click',()=>mobileNav.classList.toggle('hidden'));
+    mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileNav.classList.add('hidden')));
+    document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formMsg').classList.remove('hidden');});
+  </script>
+</body>
+</html>
